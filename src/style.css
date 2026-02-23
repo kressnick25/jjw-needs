@@ -96,15 +96,13 @@ button:focus-visible {
 }
 
 .container {
-  display: grid;
-  /* This creates as many columns as will fit, each with a minimum width of 200px and a maximum of 1fr */
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: flex;
   gap: 1rem; /* Adds space between grid items */
   padding: 10px;
 
-  /* flex-wrap: wrap; */
-  /* justify-content: center; */
-  /* align-content: space-between; */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
 }
 .container div {
   border: 1px solid black;
@@ -112,6 +110,8 @@ button:focus-visible {
   padding: 10px;
   font-size: 30px;
   text-align: center;
+  justify-content: center;
+  width: 200px
 }
 
 .container div:hover{
