@@ -67,6 +67,7 @@ function createExtraDiv(e: Extra) {
         div.remove() 
     })
     div.append(label, img, button)
+    div.addEventListener('click', clickHandler)
     return div
 }
 
